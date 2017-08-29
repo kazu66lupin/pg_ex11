@@ -10,8 +10,8 @@ public class ConvertUnicode {
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 		try{
 			String line = reader.readLine();
-			for(int i=0; i<=line.length(); i++){
-				System.out.println("'" + line.charAt(i) + "	'の文字コードは" + "です。");
+			for(int i=0; i<line.length(); i++){
+				System.out.println("'" + line.charAt(i) + "	'の文字コードは" + (line.charAt(i)+0) + "です。");
 			}
 		}catch(IOException e){
 			System.out.println(e);
